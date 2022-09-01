@@ -1,0 +1,32 @@
+CREATE DATABASE projetocrud;
+
+USE projetocrud;
+
+CREATE TABLE Passageiro (
+id_passageiro INTEGER PRIMARY KEY auto_increment,
+nome_passageiro VARCHAR(50)
+);
+
+CREATE TABLE Destino (
+id_destino INTEGER PRIMARY KEY auto_increment,
+nome_destino VARCHAR(50)
+);
+
+CREATE TABLE Passagem (
+id_passagem INTEGER PRIMARY KEY auto_increment,
+nome_passagem VARCHAR(80),
+preco_passagem DECIMAL(5,3)
+);
+
+CREATE TABLE Usuario (
+id_usuario INTEGER PRIMARY KEY auto_increment,
+email_usuario VARCHAR(80),
+nome_usuario VARCHAR(80),
+senha_usuario VARCHAR(10)
+);
+
+
+
+select * from passageiro;
+select * from destino;
+select * from passagem;
