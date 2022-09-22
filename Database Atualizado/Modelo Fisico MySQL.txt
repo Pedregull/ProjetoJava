@@ -1,0 +1,24 @@
+CREATE DATABASE projetocrud_MVC;
+
+USE projetocrud_MVC;
+
+CREATE TABLE Destino (
+id_destino INTEGER PRIMARY KEY auto_increment,
+nome_destino VARCHAR(50)
+);
+
+CREATE TABLE Passagem (
+id_passagem INTEGER PRIMARY KEY auto_increment,
+nome_passagem VARCHAR(80),
+preco_passagem DECIMAL(6,0)
+);
+
+CREATE TABLE Usuario (
+id_usuario INTEGER PRIMARY KEY auto_increment,
+email_usuario VARCHAR(80),
+nome_usuario VARCHAR(80),
+senha_usuario VARCHAR(10)
+);
+
+ALTER TABLE Passagem
+CHANGE preco_passagem preco_passagem decimal(6,0) ;
