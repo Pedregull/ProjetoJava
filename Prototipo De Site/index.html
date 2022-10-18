@@ -1,68 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo</title>
-
+    <title>Viagens Aqui</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="../Css e Js/aparencia.css">
-
-
+    <link rel="stylesheet" href="./css/Cor de Fundo.css">
 </head>
 
-<body class="body">
+<body>
 
+    <header class="img">
+        <!--MENU NAV-->
+        <div class="container">
+            <ul>
+                <li style="--i: #ffffff; --j:#00bfff">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">
+                        <a class="nav-link active" href="./páginas/Login.html">LOGIN</a>
+                    </span>
+                </li>
 
-    <!--COMEÇO DO NAVBAR-->
+                <li style="--i: #ffffff; --j:#ea51ff">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">
+                        <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+                    </span>
+                </li>
 
-    <ul class="nav bg-dark justify-content-center border">
-        <li class="nav-item">
-            <a class="nav-link active text-warning" href="./paginas/home.html"><b>HOME</b></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-warning" href="./paginas/destinos.html"><b>DESTINOS</b></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-warning" href="./paginas/promocoes.html"><b>PROMOÇÕES</b></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-warning " href="./paginas/contato.html"><b>CONTATO</b></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-warning " href="./paginas/entrar.html"><b>ENTRAR/CADASTRAR</b></a>
-        </li>
+                <li style="--i: #ffffff; --j:#f434e2">
+                    <span class="icon">
+                        <ion-icon name="airplane-outline"></ion-icon>
+                    </span>
+                    <span class="text">
+                        <a class="nav-link active" aria-current="page" href="./páginas/Destinos.html">DESTINOS</a>
+                    </span>
+                </li>
 
-    </ul>
+                <li style="--i: #ffffff; --j:#f434e2">
+                    <span class="icon">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </span>
+                    <span class="text">
+                        <a class="nav-link active" aria-current="page" href="./páginas/Promoções.html">PROMOÇÕES</a>
+                    </span>
+                </li>
+                <li style="--i: #ffffff; --j:#ff5e62">
+                    <span class="icon">
+                        <ion-icon name="chatbox-outline"></ion-icon>
+                    </span>
+                    <span class="text">
+                        <a class="nav-link active" aria-current="page" href="./páginas/Contato.html">CONTATO</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!--FIM DO MENU NAV-->
+    </header>
 
-    <!--FIM DO NAVBAR-->
+    <img width="50%" src="./imagens/MaisProcurados.jpg" class="rounded mx-auto d-block" alt="...">
 
-
-    <!--INICIO DO CONTEUDO DA HOME-->
-    <div class="row mt-3 mb-3 body">
-
+    <div class="row mt-3">
 
         <div class="col-md-4 col-sm-12">
 
-            <div class="card bg-success font-italic">
-                <img class="card-img-top" src="./imagens/iceland-wallpaper.jpg" alt="Title">
+            <div class="card">
+                <img class="card-img-top" src="./imagens/NovaYork.jpg.opdownload" alt="Title">
                 <div class="card-body">
-                    <h4 class="card-title">Islândia</h4>
-                    <p class="card-text">Conheça o lugar mais bonito do planeta terra, se aventure por belas paisagens
-                        no incrível ecossistema islandês que atrai os mais diversos olhos para admirar sua majestosa
-                        beleza.</p>
+                    <h4 class="card-title">Nova York</h4>
+                    <p class="card-text">Seja bem-vindo à Nova York! Uma das cidades mais famosas do mundo, a Big Apple
+                        é uma
+                        gigante. São 8,5 milhões de habitantes, mais de 400 estações de metrô, milhares de restaurantes,
+                        hotéis,
+                        teatros, museus e parques.</p>
 
-                    <a href="./paginas/promocoes.html" class="btn btn-light"><b class="text-dark">Veja os preços</b></a>
+                    <a href="páginas/Promoções.html" class="btn btn-primary">Ver Promoções</a>
                 </div>
             </div>
 
@@ -70,183 +96,84 @@
 
         <div class="col-md-4 col-sm-12">
 
-            <div class="card bg-success font-italic">
-                <img class="card-img-top" src="imagens/R.jfif" alt="Title">
+            <div class="card">
+                <img class="card-img-top" src="./imagens/disney.jpg" alt="Title">
                 <div class="card-body">
-                    <h4 class="card-title">Japão</h4>
-                    <p class="card-text">Visite o país formado por belíssimos arquipélagos que são ricos em história e
-                        cultura, conheça cidades iluminadas com uma cultura muito convidativa que encanta a todos.
-                    </p>
+                    <h4 class="card-title">Disney</h4>
+                    <p class="card-text">
+                        Realize seu sonho de conhecer o Mickey, Minnie, Pateta e todas as princesas no mundo mágico da
+                        Disney!Localizado em Orlando, nos Estados Unidos, possui quatro parques temáticos e dois
+                        aquáticos.</p>
 
-                    <a href="./paginas/promocoes.html" class="btn btn-light"><b class="text-dark">Veja os preços</b></a>
+                    <a href="páginas/Promoções.html" class="btn btn-primary">Ver Promoções</a>
                 </div>
             </div>
 
         </div>
-
         <div class="col-md-4 col-sm-12">
 
-            <div class="card bg-success font-italic">
-                <img class="card-img-top" src="imagens/coreia do norte.jpg" alt="Title">
+            <div class="card">
+                <img class="card-img-top" src="./imagens/Paris.jpg" alt="Title">
                 <div class="card-body">
-                    <h4 class="card-title"><b>Coreia do Norte</b></h4>
-                    <p class="card-text">Já pensou na oportunidade de conhecer um dos países mais fechados do mundo?
-                        Pode parecer uma ideia estranha mas a Coreia do Norte, apesar de sua restrição, é um país muito
-                        belo aos olhos de quem busca por um tipo peculiar de admiração, composta por grandes cidades e
-                        paisagens urbanas estonteantes.</p>
-                    <a href="./paginas/promocoes.html" class="btn btn-light"><b class="text-dark">Veja os preços</b></a>
+                    <h4 class="card-title">Paris</h4>
+                    <p class="card-text">Um dos destinos mais badalados e românticos do mundo, a capital da França atrai
+                        casais apaixonadas em busca da lua de mel perfeita, amantes de história e todos que não resistem
+                        ao charme francês. </p>
+                    <a href="páginas/Promoções.html" class="btn btn-primary">Ver Promoções</a>
 
                 </div>
             </div>
 
         </div>
-    </div>
 
-    <div class="row mt-3 mb-4">
+ <!--INICIO DO FOOTER-->
+ <footer class="bg-dark text-center text-white">
 
-        <div class="col-md-4 col-sm-12">
+    <div class="container p-4">
 
-            <div class="card bg-success font-italic">
-                <img class="card-img-top" src="imagens/moscou-catedral-sao-basilio-russia.jpg" alt="Title">
-                <div class="card-body">
-                    <h4 class="card-title">Rússia</h4>
-                    <p class="card-text">Maior país em dimensão territorial do mundo, a Rússia será o centro das
-                        atenções a partir de junho de 2018. E não é para menos: além do show de bola que vai rolar por
-                        lá, os turistas encontrarão milhares de motivos para se apaixonar por esse país de proporções
-                        continentais.</p>
+      <section class="mb-4">
+        <form>
 
-                    <a href="./paginas/promocoes.html" class="btn btn-light"><b class="text-dark">Veja os preços</b></a>
-                </div>
+          <div class="row d-flex justify-content-center">
+
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Cadastre seu e-mail e ganhe prêmios!</strong>
+              </p>
             </div>
 
-        </div>
 
-        <div class="col-md-4 col-sm-12">
 
-            <div class="card bg-success font-italic">
-                <img class="card-img-top" src="imagens/Noruega.jpg" alt="Title">
-                <div class="card-body">
-                    <h4 class="card-title">Noruega</h4>
-                    <p class="card-text">Com fiordes borbulhantes ao longo da linha costeira e montanhas imponentes no
-                        interior, a Noruega poderia legitimamente reivindicar o título de um dos países mais belos do
-                        mundo. Sua sociedade progressista, próspera cena cultural e diversas áreas livres para
-                        acampamento fazem da Noruega um excelente lugar para visitar.
-                    </p>
+            <div class="col-md-5 col-12">
 
-                    <a href="./paginas/promocoes.html" class="btn btn-light"><b class="text-dark">Veja os preços</b></a>
-                </div>
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Endereço de e-mail</label>
+              </div>
             </div>
 
-        </div>
 
-        <div class="col-md-4 col-sm-12">
 
-            <div class="card bg-success font-italic">
-                <img class="card-img-top" src="imagens/CHINA.jfif" alt="Title">
-                <div class="card-body">
-                    <h4 class="card-title"><b>China</b></h4>
-                    <p class="card-text">Uma cultura milenar, com diversas contribuições fantásticas para o mundo,
-                        templos, construções, monumentos e também muita modernidade. Esta é a China, que hoje ocupa
-                        espaço de destaque na economia mundial e abre as portas para visitantes de todo o mundo conhecer
-                        mais esse país fascinante.</p>
-                    <a href="./paginas/promocoes.html" class="btn btn-light"><b class="text-dark">Veja os preços</b></a>
+            <div class="col-auto">
 
-                </div>
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Cadastrar
+              </button>
             </div>
 
-        </div>
-    </div>
-    <div class="container-fluid row-5">
-    </div>
-    <div class="card-header">
-    </div>
-    <!--FIM DO CONTEUDO DA HOME-->
+          </div>
 
+          <div class="text-center p-3" style="background-color: rgba(255, 0, 0, 0.2);">
+            Pedro Viagens © 2022 Copyright: Todos os direitos reservados.
+            <a class="text-white" href=""></a>
+          </div>
+        </form>
+        <!--FIM DO FOOTER-->
 
-
-    <!--INICIO DO FOOTER-->
-    <footer class="bg-dark text-center text-white">
-
-        <div class="container p-4">
-
-            <section class="mb-4">
-
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="icon ion-social-youtube"></i></a>
-
-
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="icon ion-social-google"></i></a>
-
-
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="icon ion-social-twitter"></i></a>
-
-
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="icon ion-social-facebook"></i></a>
-
-
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="icon ion-social-linkedin"></i></a>
-
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="icon ion-social-github"></i></a>
-            </section>
-
-
-
-            <section class="">
-                <form action="">
-
-                    <div class="row d-flex justify-content-center">
-
-                        <div class="col-auto">
-                            <p class="pt-2">
-                                <strong>Cadastre seu e-mail para concorrer a viagens gratuitas!</strong>
-                            </p>
-                        </div>
-
-
-
-                        <div class="col-md-5 col-12">
-
-                            <div class="form-outline form-white mb-4">
-                                <input type="email" id="form5Example21" class="form-control" />
-                                <label class="form-label" for="form5Example21">Endereço de e-mail</label>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-auto">
-
-                            <button type="submit" class="btn btn-outline-light mb-4">
-                                Cadastrar
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <div class="text-center p-3" style="background-color: rgba(255, 0, 0, 0.2);">
-                        Pedro Viagens © 2022 Copyright: Todos os direitos reservados.
-                        <a class="text-white" href=""></a>
-                    </div>
-                </form>
-            </section>
-            <!--FIM DO FOOTER-->
-
-
-
-
-
-
-
-
-
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
 </html>
